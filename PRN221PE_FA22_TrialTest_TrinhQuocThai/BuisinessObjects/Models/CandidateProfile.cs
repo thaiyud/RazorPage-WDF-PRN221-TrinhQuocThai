@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BuisinessObjects.Models
+namespace Candidate_BuisinessObjects.Models
 {
     public partial class CandidateProfile
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using BuisinessObjects.Models;
+using Candidate_BuisinessObjects.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace DAO
+namespace Candidate_DAO
 
 {
     public partial class CandidateManagementContext : DbContext

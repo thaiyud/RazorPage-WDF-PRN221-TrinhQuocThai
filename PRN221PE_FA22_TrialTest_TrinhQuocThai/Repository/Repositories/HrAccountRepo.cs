@@ -1,13 +1,13 @@
-﻿using BuisinessObjects.Models;
-using DAO;
-using Repository.IRepositories;
+﻿using Candidate_BuisinessObjects.Models;
+using Candidate_DAO;
+using Candidate_Repository.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository.Repositories
+namespace Candidate_Repository.Repositories
 {
     public class HRAccountRepo : IHRAccountRepo
     {

@@ -1,14 +1,14 @@
-﻿using BuisinessObjects.Models;
-using Repository.IRepositories;
-using Repository.Repositories;
-using Service.IServices;
+﻿using Candidate_BuisinessObjects.Models;
+using Candidate_Repository.IRepositories;
+using Candidate_Repository.Repositories;
+using Candidate_Service.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.Services
+namespace Candidate_Service.Services
 {
     public class HRAccountService : IHRAccountService
     {

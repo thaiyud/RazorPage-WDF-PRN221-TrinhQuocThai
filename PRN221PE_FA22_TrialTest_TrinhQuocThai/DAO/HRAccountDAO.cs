@@ -1,6 +1,6 @@
-﻿using BuisinessObjects.Models;
+﻿using Candidate_BuisinessObjects.Models;
 
-namespace DAO
+namespace Candidate_DAO
 {
     public class HRAccountDAO
     {
@@ -9,7 +9,6 @@ namespace DAO
 
         public static HRAccountDAO Instance 
         { 
-            //singletion design partern 
             get
             {
                 if (instance == null)
