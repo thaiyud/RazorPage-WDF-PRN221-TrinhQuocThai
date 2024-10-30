@@ -60,7 +60,9 @@ namespace Candidate_DAO
             {
                 if (job != null)
                 {
-                    context.Entry<JobPosting>(jobPosting).State = Microsoft.EntityFrameworkCore.EntityState.Modified; ;
+                    //context.Entry<JobPosting>(jobPosting).State = Microsoft.EntityFrameworkCore.EntityState.Modified; 
+                    job.JobPostingTitle = jobPosting.JobPostingTitle; // Update all relevant properties
+                    job.Description = jobPosting.Description; // Example property
                     context.SaveChanges();
                     result = true;
                 }

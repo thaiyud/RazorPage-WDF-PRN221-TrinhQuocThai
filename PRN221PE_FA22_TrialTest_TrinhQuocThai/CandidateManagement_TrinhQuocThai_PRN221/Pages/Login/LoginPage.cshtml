@@ -1,0 +1,73 @@
+﻿@page
+@model CandidateManagement_TrinhQuocThai_PRN221.Pages.Login.IndexModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: url('/images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-primary, .btn-danger {
+            border-radius: 20px;
+            width: 48%;
+        }
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+        .form-check-label {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form method="post">
+            <div class="form-group text-center">
+                <h2>Login</h2>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="txtEmail" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="txtPassword" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <div class="d-flex justify-content-between">
+                <input type="submit" class="btn btn-primary" name="btnLogin" value="Login" />
+                <input type="reset" class="btn btn-danger" value="Cancel" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

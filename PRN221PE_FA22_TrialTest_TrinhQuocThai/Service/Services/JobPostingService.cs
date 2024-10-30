@@ -22,6 +22,20 @@ namespace Candidate_Service.Services
         {
             return iJobPostingRepo.GetJobPostings();
         }
+        public (List<JobPosting> Items, int TotalItems, int TotalPages) GetJobPostings(int pageNumber, int pageSize)
+        {
+            var allProfiles = iJobPostingRepo.GetJobPostings();
+            var totalItems = allProfiles.Count();
+
+            var pagedProfiles = allProfiles
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            return (pagedProfiles, totalItems, totalPages);
+        }
 
         public JobPosting GetJobPosting(string jobId)
         {
